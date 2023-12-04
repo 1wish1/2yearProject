@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Montserrat:wght@500&family=Prompt:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: rgb(48, 4, 65,0.5);
+}
+/* navigation bar */
+nav{
+  font-family: 'Bebas Neue', sans-serif;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background:  rgb(48, 4, 65,1) /* Definitely adjustable to what shade you like */
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5%;
+    margin-top: -15px;
+    font-size: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+   
+
+}
+.nav_center{
+    margin-top: 11px;
+    display: inline-flex;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    
+}
+#login{
+    text-align: center;
+    background-color: hsl(0, 0%, 100%,0.5);
+    width: 100px;
+    display: inline-block;
+    margin-right: 100px;
+    position: absolute;
+    margin-right: 50px;
+    right: 0;
+    border-radius: 10px;
+
+}
+#login:hover{
+    background-color: pink;
+    background-size: 100px;
+    color: hsl(0, 0%, 0%);
+}
+#logo{
+    position: absolute;
+    display: inline-block;
+    margin-left: 50px;
+    left: 0;
+
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: hsl(46, 100%, 50%);
+}/* end nav */
+
+/* header */
+header{
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(image/CSU.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;  
+}
+header h1{
+  margin-top: 20%;
+  color: #ffffff;
+  text-shadow: 0 0 10px #f3e5e5;
+  letter-spacing: 10px;
+}
+#intro{
+  font-size: 50px;
+  margin: 0;
+  padding: 15px;
+  flex-basis: 100%;
+  text-shadow: none;
+
+}
+#year{
+    letter-spacing: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    flex-basis: 100%;
+    margin-top: -3%;
+    color: #ffffff;
+    text-shadow: none;
+}
+.parallax-container{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4rem;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  gap: 1.6em;
+  margin: auto;
+}
+/* card_header*/
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+filter: drop-shadow(2px 4px 6px black);
+background-color: rgba(152, 151, 152, 0.25); /* Just adjust the color or opacity to make the text pop! */
+box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 1px 1px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card svg {
+    width: 0px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f2f2f2; /**/
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+
+/* end card_header */
+/* End header*/
+/* about */
+.About_UsBG{
+  min-width: 350px;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.967);
+}
+.About_UsBG h2{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: -1%;
+}
+.About_UsBG p{
+  background-color:rgba(0, 0, 0, 0.182);
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(72, 40, 72);
+  width: 60%;
+  max-width: 1000px;
+  min-width: 350px;
+  height: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  text-indent: 10%;
+  text-align: justify;
+  word-spacing:  -5px;
+  
+}
+.AboutContain1{
+  position: relative;
+  max-width: 1000px;
+  min-width: 350px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: rgba(218, 184, 184, 0.911);
+}
+.AboutContain1 h3{
+  border-bottom: 3px solid rgb(100, 88, 88);
+  margin-left: 20px;
+  margin-top: 10px;
+  word-spacing: -5px;
+}
+.AboutContain1 ol{
+  padding-top: 1%;
+  padding-left: 5%;
+}
+/*end about*/
+/*Contact*/
+.ContactBG{
+  display: flex;
+  padding: 0%;
+  min-width: 350px;
+  background-image:linear-gradient(rgba(65, 63, 153, 0.7),rgba(153, 100, 212, 0.5)),url(image/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Prompt', sans-serif;
+}
+.ContactBG .ContactContain2{
+  /*overflow: hidden;*/
+  max-width: 1000px;
+  min-width: 350px;
+  height: 485px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  border-radius: 25px;  
+  box-shadow: 0 0 25px 10px rgb(72, 40, 72, .7);
+  overflow: hidden;
+display:  grid;
+grid-template-columns: repeat(2,1fr);
+z-index: 1;
+}
+.ContactBG h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 4%;
+  position: relative;
+  top: 10px;
+  flex-basis: 100%;
+
+}
+.contacts{
+  height: 100%;
+  background-color: rgb(243, 240, 240,.5);
+}
+.first-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(106, 56, 170);
+  margin: 5%;
+  font-size: 40px;
+  font-weight: 900;
+  width: 100%;
+}
+.second-text{
+  position: relative;
+  top: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(106, 56, 170);
+  font: 1.5em sans-serif;
+}
+.contacts img{
+  width: 66%;
+  height: 180px;
+  border-radius: 20px;
+  
+}
+.social-media{
+  margin-top: 90px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media li{
+  margin: 0 20px;
+}
+
+.social-media i  {
+  background-color:rgb(106, 56, 170) ;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.social-media i:hover{
+  background-color:white ;
+  color:  rgb(106, 56, 170) ;
+   
+}
+
+.submit-form{
+  height: 530px;
+  background-image: linear-gradient(to right, rgb(243, 240, 240,.5), rgb(105 0 103));/* Just adjust the color or opacity to make the text pop! */
+}
+.third-text{
+  width: 100%;
+  font-size: 25px;
+  margin-top: 5%;
+  color: #ffffff;
+  position: relative;
+  float: left;
+}
+.submit-form form{
+  margin-top: -20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+.input-box{
+  position: relative;
+  left: 50px;
+  height: 40px;
+  width: 70%;
+  margin: 30px 0;
+}
+.input{
+  
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  outline: none;
+  color:black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.text{
+  padding-top: 10px;
+}
+.input-box label{
+  pointer-events: none;
+  position: absolute;
+  left: 30px;
+  top: 20%;
+  font-size: 15px;
+  color: #ffffff;
+  transition: .3s;
+}
+.input-box .input:focus ~ label, 
+.input-box .input:valid ~ label{
+  top: -10px;
+  background:#8f50ec;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.input-box .input:focus, 
+.input-box .input:valid {
+  filter: none;
+  -webkit-filter: none;
+
+}
+textarea.input{
+
+  min-height: 120px;
+  overflow: auto;
+}
+.btn{
+  position: relative;
+  top: 70px;
+  background: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  width: 30%;
+  font-size: 16px;
+  color: #8f50ec;
+  cursor: pointer;
+}
+
+
+
+/* End Contact*/
+/* log in*/
+.loginPage{
+  flex-direction: column;
+
+}
+.login{
+  position: relative;
+  
+}
+.signUP{
+  position: relative;
+  top: 410px;
+  
+}
+.forget{
+  position: relative;
+  top: 900px;
+  
+}
+.containLog{
+  position: relative;
+  overflow: hidden;/* sign up hidden */
+  max-width: 600px;
+  min-width: 350px;
+  width: 100%;
+  height: 450px;
+  background-color: #777 ;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family:'Montserrat',sans-serif;
+  margin-top: -66px;
+}
+.containLog form{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -6px;
+}
+
+.circle{ 
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background-image: url(image/profile.jpg);
+  background-size:cover;
+  border-radius: 50%;
+  
+  box-shadow: 0 0px 30px rgb(0, 0, 0);
+  animation: circle 4s 2s infinite alternate linear;
+}
+.containLog fieldset{
+  position: absolute;
+  border: #f2f2f2 3px solid;
+  width: 400px;
+  max-width: 350px;
+  height: 350px;
+  padding-left: 50px;
+  padding-right: 50px;
+  animation: border 2s infinite alternate linear;
+  border-radius: 10px;
+  transition: 1.5;
+  
+    
+}
+.login .signin input.btn:hover .containLog fieldset {
+  background-color: palegoldenrod;
+
+}
+.containLog legend{
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+.input-box2 input{
+  width: 200px;
+  height: 30px;
+  transition: 0.5;
+  padding-left: 20px;
+  font-size: 20px;
+filter: blur(1px);
+-webkit-filter: blur(1px);
+  cursor: pointer;
+  transition: 1s;
+}
+.input-box2 {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.input-box2 label{
+  font-weight: 500;
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  pointer-events: none;
+  display: block;
+  transition: .5s;
+
+}
+.forgetbtn input{
+    border: none;
+    background: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.input-box2 input:focus ~ label,
+.input-box2 input:valid ~ label {
+  top: -20px;
+
+}
+.input-box2 input:focus, 
+.input-box2 input:valid {
+  filter: none;
+  -webkit-filter: none;
+
+}
+
+.containLog a{
+  font-weight: 300;
+  text-decoration: none; 
+}
+.containLog .submit input{
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;  
+  cursor: pointer;
+  transition: .1s;
+}
+.containLog .signin input{
+  border-radius: 0;
+  color: rgb(76, 56, 56);
+  background: #eadbdb;
+}
+.containLog .submit input:active{
+  opacity: .5;
+}
+.remember{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 15px;
+  
+}
+.remember input{
+  width: 20px;
+  accent-color:#777;
+}
+
+
+
+
+
+
+
+
+/*smart phone*/
+@media screen and (max-width: 767px){
+  /*nav*/
+  nav ul li a{
+    margin-left: 0;
+    margin-right: 0px;  
+  }
+    #login{
+        margin-right: 10px;
+        width: 50px;
+    }
+    #logo{
+        margin-left: 30px;
+    }
+   /*header*/ 
+    header{
+      max-width: 1000px;
+      min-width: 350px;
+      min-height: 100vh;
+    }
+    #intro{
+      flex-direction: column;
+    }
+    .ContactBG .ContactContain2{
+      height: 100%;
+      grid-template-columns: 1fr;
+    }
+    .social-media{
+      margin-top: 43px;
+      padding-bottom: 30px;
+    }
+    
+}
+@keyframes border{
+  25%{
+    border-right-color: #559caa ;
+    box-shadow: 0 0px 15px rgb(0, 0, 0);
+
+  }
+  50%{
+    border-right-color: #559caa ;
+    box-shadow: 0 0px 15px rgb(0, 0, 0);
+  }
+  75%{
+    border-bottom-color: #559caa ;
+    box-shadow: 0 0px 15px rgb(0, 0, 0);
+  }
+  100%{
+    box-shadow: 0 0px 15px rgb(0, 0, 0);
+    border-left-color: #559caa ;
+  }
+}
+@keyframes circle{
+
+  25%{
+    border-top-color: #559caa ;
+
+  }
+  50%{
+   
+    border-right-color: #559caa ;
+  }
+  75%{
+    border-bottom-color: #559caa ;
+  }
+  100%{
+    
+    border-left-color: #559caa ;
+  }
+}
